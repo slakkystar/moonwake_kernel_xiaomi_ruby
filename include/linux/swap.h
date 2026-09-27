@@ -382,6 +382,12 @@ extern unsigned long shrink_all_memory(unsigned long nr_pages);
 extern int vm_swappiness;
 extern int remove_mapping(struct address_space *mapping, struct page *page);
 extern unsigned long vm_total_pages;
+#ifdef CONFIG_DYNAMIC_TUNNING_SWAPPINESS
+extern int vm_swappiness_threshold1;
+extern int vm_swappiness_threshold2;
+extern int swappiness_threshold1_size;
+extern int swappiness_threshold2_size;
+#endif
 
 #ifdef CONFIG_NUMA
 extern int node_reclaim_mode;

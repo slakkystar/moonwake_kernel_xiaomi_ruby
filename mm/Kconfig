@@ -835,3 +835,9 @@ config MTK_MM_DEBUG
 	  so we can remove the debug code by disabling it.
 
 endmenu
+
+config DYNAMIC_TUNNING_SWAPPINESS
+	bool "tunning swappiess depends on file_pages size"
+	default n
+	help
+	  tunning swappiess depends on file_pages size
