@@ -752,6 +752,12 @@ config DEVICE_PUBLIC
 	  memory; i.e., memory that is accessible from both the device and
 	  the CPU
 
+config DYNAMIC_TUNNING_SWAPPINESS
+	bool "tunning swappiess depends on file_pages size"
+	default n
+	help
+	  tunning swappiess depends on file_pages size
+
 config ARCH_HAS_PTE_SPECIAL
 	bool
 config FRAME_VECTOR
